@@ -1,0 +1,16 @@
+﻿[project]
+name = "recipe-book-pipeline"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "google-generativeai","openai","anthropic","supabase","aiofiles",
+  "Pillow","imagehash","numpy","hdbscan","scikit-learn",
+  "google-auth","google-auth-oauthlib","requests","tqdm","python-dotenv"
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pipeline*"]
